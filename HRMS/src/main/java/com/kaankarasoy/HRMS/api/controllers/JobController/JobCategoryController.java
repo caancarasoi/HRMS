@@ -13,17 +13,20 @@ import com.kaankarasoy.HRMS.entities.concrate.Job.JobCategory;
 @RestController
 @RequestMapping("/api/job")
 public class JobCategoryController {
-	private JobCategoryService _jobCategoryService;
+	private JobCategoryService jobCategoryService;
 	
 	@Autowired
 	public JobCategoryController(JobCategoryService jobCategoryService) {
 		super();
-		this._jobCategoryService = jobCategoryService;
+		this.jobCategoryService = jobCategoryService;
 	}
+
+
+	
 	
 	@GetMapping("/getAllJobCategory")
 	public List<JobCategory> GetAllJobCategory(){
-		return this._jobCategoryService.getAll();
+		return this.jobCategoryService.getAll();
 	}
 	
 

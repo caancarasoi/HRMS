@@ -3,11 +3,13 @@ package com.kaankarasoy.HRMS.business.concrate;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.kaankarasoy.HRMS.business.abstracts.JobCategoryService;
 import com.kaankarasoy.HRMS.dataAccess.abstracts.JobCategoryDao;
 import com.kaankarasoy.HRMS.entities.concrate.Job.JobCategory;
 
+@Service
 public class JobCategoryManager implements JobCategoryService{
 	
 	private JobCategoryDao _jobCategoryDao;

@@ -5,5 +5,10 @@ import java.util.List;
 import com.kaankarasoy.HRMS.entities.concrate.Job.JobCategory;
 
 public interface JobCategoryService {
-	public List<JobCategory> getAll();
+	
+	 public List<JobCategory> getAll();
+	 
+	 
+	 
+	 
 }
